@@ -25,6 +25,16 @@ How to Run:
 5. python manage.py runserver
    (run project)
 
+Screenshot:
+For all functionality 
+home page, register, login, file upload dashboard and file details dashboard
+
+![Screenshot (41)](https://github.com/mahbubu1640/File_Pproject/assets/104581346/9838ae1e-051d-4ffd-a726-2e4ab7589cee)
+![Screenshot (37)](https://github.com/mahbubu1640/File_Pproject/assets/104581346/d6c69564-71f4-4079-bd99-91d2f087aed7)
+![Screenshot (38)](https://github.com/mahbubu1640/File_Pproject/assets/104581346/f088142b-a70b-4f57-bb3a-e2b58ba15b91)
+![Screenshot (39)](https://github.com/mahbubu1640/File_Pproject/assets/104581346/fed30c56-0d15-44bd-bab8-1b985b301040)
+![Screenshot (40)](https://github.com/mahbubu1640/File_Pproject/assets/104581346/e0ac9b4f-b6a2-4635-b2f6-f9703bc7c4a1)
+
 
 
 Technologies Used:
