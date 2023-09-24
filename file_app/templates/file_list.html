@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Uploaded Files{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1>Uploaded Files</h1>
+                <ul>
+                    {% for file in files %}
+                        <li>
+                            <a href="{{ file.file.url }}">{{ file.file.name }}</a>
+                            (Uploaded on {{ file.upload_date|date:"F d, Y H:i" }})
+                        </li>
+                    {% empty %}
+                        <li>No files uploaded yet.</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <p style="font-size: 18px; text-align: center; margin: 20px;">
+            Congratulations! Your files have been successfully uploaded and are ready for access. Organize, share, or manage them effortlessly. Need assistance? Our support team is here to help. Thank you for choosing our platform for your file management needs.
+        </p>
+        
+    </div>
+{% endblock %}

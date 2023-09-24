@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="jumbotron text-center">
+        <h1>Welcome to our file upload and management system</h1>
+        <p style="font-size: 18px; text-align: center; margin: 20px;">
+            Unlock the full potential of our platform. Register and log in to access exclusive content and seamlessly upload your files to our secure server. Join our community today for an enhanced experience.
+        </p>
+        
+        <a href="{% url 'login' %}" class="btn btn-primary btn-lg">Login</a>
+        <a href="{% url 'register' %}" class="btn btn-success btn-lg">Register</a>
+    </div>
+    <p style="font-size: 18px; text-align: center; margin: 20px;">
+        Welcome to our advanced file uploading platform. With our intuitive interface, you can effortlessly upload, organize, and share your files securely. Whether you need to store important documents, showcase your creative work, or collaborate with a team, our platform offers the flexibility and reliability you need. Experience hassle-free file management today and elevate your productivity.
+    </p>
+      
+    
+{% endblock %}

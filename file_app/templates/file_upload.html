@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}File Upload{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <p style="font-size: 18px; text-align: center; margin: 20px;">
+            Welcome back! You're now logged in and ready to explore and upload files.
+        </p>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1>File Upload</h1>
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-primary">Upload File</button>
+                </form>
+            </div>
+
+            <!-- Logout Link on the Right -->
+            <div class="col-md-6 text-end">
+                <a href="{% url 'logout' %}" class="btn btn-danger mt-3">Logout</a>
+            </div>
+        </div>
+        
+        <!-- Links to View Uploaded Files -->
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-6">
+                <p>View your uploaded files:</p>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="{% url 'file_list' %}" class="btn btn-primary">List of Uploaded Files</a>
+                    </li>
+                    <!-- Add other links as needed -->
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
